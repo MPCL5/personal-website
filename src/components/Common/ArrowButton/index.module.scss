@@ -1,0 +1,23 @@
+@import "src/styles/variables";
+
+.main {
+  padding: 4px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: $primary;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s linear;
+
+  &:hover {
+    background-color: rgba(238,238,238,0.2);
+  }
+}
+
+.image {
+  margin-inline-start: 8px;
+}
