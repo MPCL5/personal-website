@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+.main {
+  background-color: $bg-secondary;
+  display: flex;
+  border: 1px solid $default;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $default;
+  height: 248px;
+  width: 248px;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+}
+
+.degree {
+  color: $primary;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.advisor {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}

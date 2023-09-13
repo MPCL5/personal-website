@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+
+.main {
+  background-color: $bg-primary;
+  margin-top: 48px;
+  margin-bottom: 66px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 34px;
+}
