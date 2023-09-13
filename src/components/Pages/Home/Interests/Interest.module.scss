@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.main {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.rectangle {
+  height: 8px;
+  width: 8px;
+  margin-inline-end: 12px;
+  background-color: $primary;
+  box-shadow: -2px 2px 0 #161614;
+}

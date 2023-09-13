@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.main {
+  background-color: $bg-secondary;
+  padding: 84px 0;
+}
+
+.title {
+  color: $secondary;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.brief {
+  max-width: 590px;
+  margin: 0 0 30px;
+  font-size: 20px;
+}
+
+.image {
+  margin-top: 18px;
+}
