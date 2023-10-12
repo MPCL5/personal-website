@@ -8,3 +8,7 @@ body {
   color: $default;
   margin: 0;
 }
+
+* {
+  transition: 0.1s linear;
+}

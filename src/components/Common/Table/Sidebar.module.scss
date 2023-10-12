@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.main {
+  background-color: $bg-secondary;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.item {
+  padding: 4px 0 4px 24px;
+  height: 30px;
+  cursor: pointer;
+  margin: 4px 0;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.active {
+  font-weight: 500;
+  color: $primary !important;
+
+}
