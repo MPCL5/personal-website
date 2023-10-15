@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+
+.main {
+  background-color: $bg-secondary;
+  padding-top: 48px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 36px;
+  font-weight: bold;
+}
