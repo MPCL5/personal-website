@@ -7,7 +7,13 @@ const DATA: IProjectCardData[] = [
         date: '2023-06-30',
         description: 'A simple implementation of Variational Auto Encoders on a anime dataset',
         link: 'MPCL5/VAE-Anime',
-    }
+    },
+    {
+        title: 'Stream-Data-Challenge',
+        date: '2023-04-01',
+        description: 'Playing with data steam solutions',
+        link: 'MPCL5/stream-data-challenge',
+    },
 ]
 
 export const HomeProjectsSection = () => {

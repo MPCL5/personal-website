@@ -28,20 +28,19 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
     const starCount = await getStarCount(data.link);
 
     return (
-        <div className={clsx(styles.main, 'row')}>
-            <div className={'col-9'}>
-                <h3>{data.title}</h3>
-                <div>{data.description}</div>
-                <div className={'d-flex'}>
-                    <div>PyTorch</div>
-                    <div>{data.date}</div>
-                    <div>star: {starCount}</div>
-                </div>
-            </div>
-            <div className={'col-3'}>
+        <div className={styles.main}>
+            <div className={'d-flex justify-content-between align-items-center mb-3'}>
+                <h3 className={styles.title}>{data.title}</h3>
                 <Link href={`https://github.com/${data.link}`} target={'_blank'}>
-                    <Button>Visit</Button>
+                    {/*TODO: add its icon*/}
+                    <Button className={styles.button}>Visit</Button>
                 </Link>
+            </div>
+            <p className={styles.descript}>{data.description}</p>
+            <div className={'d-flex'}>
+                <div>PyTorch</div>
+                <div>{data.date}</div>
+                <div>star: {starCount}</div>
             </div>
         </div>
     )

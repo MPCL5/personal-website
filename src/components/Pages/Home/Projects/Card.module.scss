@@ -1,3 +1,29 @@
+@import "src/styles/variables";
+
 .main {
   padding: 36px 24px;
+  background-color: $bg-primary;
+  border: 1px solid $default;
+  box-shadow: 4px 4px 0 $primary;
+}
+
+.title {
+  font-size: 36px;
+  color: $primary;
+  margin: 0;
+}
+
+.button {
+  height: 27px;
+  min-width: 91px;
+  font-size: 16px;
+  padding: 0;
+}
+
+.descript {
+  font-size: 16px;
+  min-height: 38px;
+  max-width: 373px;
+  margin-bottom: 16px;
+  line-height: 19px;
 }
