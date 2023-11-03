@@ -1,5 +1,4 @@
 import styles from './Card.module.scss'
-import clsx from "clsx";
 import {Button} from "@/components/Common/Button";
 import Link from "next/link";
 
