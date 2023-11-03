@@ -18,6 +18,14 @@
   min-width: 91px;
   font-size: 16px;
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  img {
+    margin-inline-start: 4px;
+  }
 }
 
 .descript {
@@ -26,4 +34,8 @@
   max-width: 373px;
   margin-bottom: 16px;
   line-height: 19px;
+}
+
+.details {
+  font-size: 12px;
 }

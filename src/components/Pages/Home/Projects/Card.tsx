@@ -1,6 +1,8 @@
 import styles from './Card.module.scss'
 import {Button} from "@/components/Common/Button";
 import Link from "next/link";
+import Image from "next/image";
+import clsx from "clsx";
 
 export interface IProjectCardData {
     title: string;
@@ -31,15 +33,43 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
             <div className={'d-flex justify-content-between align-items-center mb-3'}>
                 <h3 className={styles.title}>{data.title}</h3>
                 <Link href={`https://github.com/${data.link}`} target={'_blank'}>
-                    {/*TODO: add its icon*/}
-                    <Button className={styles.button}>Visit</Button>
+                    <Button className={styles.button}>
+                        <span>Visit</span>
+                        <Image
+                            src={'img/icon_globe.svg'}
+                            alt={'glob'}
+                            height={18}
+                            width={18}
+                            draggable={false}
+                        />
+                    </Button>
                 </Link>
             </div>
             <p className={styles.descript}>{data.description}</p>
-            <div className={'d-flex'}>
+            <div className={clsx('d-flex', styles.details)}>
                 <div>PyTorch</div>
-                <div>{data.date}</div>
-                <div>star: {starCount}</div>
+                <div className={'mx-3 d-inline-flex justify-content-center'}>
+                    <Image
+                        src={'/img/calender.svg'}
+                        alt={'star'}
+                        height={12}
+                        width={12}
+                        draggable={false}
+                        className={'me-2'}
+                    />
+                    {data.date}
+                </div>
+                <div className={'d-inline-flex justify-content-center'}>
+                    <Image
+                        src={'/img/star.svg'}
+                        alt={'star'}
+                        height={12}
+                        width={12}
+                        draggable={false}
+                        className={'me-2'}
+                    />
+                    {starCount}
+                </div>
             </div>
         </div>
     )
