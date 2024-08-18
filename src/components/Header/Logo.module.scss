@@ -1,3 +1,11 @@
+@import "./src/styles/utilities";
+
 .main {
   font-size: 44px;
+}
+
+@include media-breakpoint-down(md) {
+  .main {
+    font-size: 36px;
+  }
 }

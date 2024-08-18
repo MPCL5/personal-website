@@ -1,0 +1,18 @@
+@import "./src/styles/variables";
+
+.main {
+  border-radius: 3px;
+  border: #000000 1px solid;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-secondary;
+  margin-right: 18px;
+
+  &:hover {
+    border-color: $default;
+    box-shadow: 0 0 8px #000000;
+  }
+}
