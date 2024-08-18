@@ -8,5 +8,6 @@ export const BioSectionImage = () => {
         className={styles.main}
         height={383}
         width={383}
+        layout={"responsive"}
     />
 }

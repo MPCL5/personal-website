@@ -12,7 +12,7 @@ const mono = Fira_Mono({weight: "400", subsets: ['latin']});
 export const NavigationBar = () => {
     const pathname = usePathname();
 
-    return <ul className={`${mono.className} ${styles.main}`}>
+    return <ul className={`${mono.className} ${styles.main} d-none d-md-flex`}>
         {NAVIGATION_ITEMS.map(item => (
             <li key={item.path} className={clsx(item.path === pathname && styles.active)}>
                 <Link href={item.path}>{item.label}</Link>
