@@ -1,4 +1,5 @@
 @import "src/styles/variables";
+@import "src/styles/utilities";
 
 .main {
   display: flex;
@@ -18,4 +19,10 @@
   margin-inline-end: 12px;
   background-color: $primary;
   box-shadow: -2px 2px 0 #161614;
+}
+
+@include media-breakpoint-down(md) {
+  .main {
+    font-size: 20px;
+  }
 }

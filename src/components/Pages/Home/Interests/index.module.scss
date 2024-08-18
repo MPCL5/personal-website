@@ -1,4 +1,5 @@
 @import "src/styles/variables";
+@import "src/styles/utilities";
 
 .main {
   background-color: $bg-secondary;
@@ -21,4 +22,28 @@
 
 .image {
   margin-top: 18px;
+}
+
+
+@include media-breakpoint-down(md) {
+  .title {
+    font-size: 30px;
+  }
+
+  .main {
+    padding: 24px 0 32px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .brief {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
 }

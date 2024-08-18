@@ -23,6 +23,11 @@
 }
 
 @include media-breakpoint-down(md) {
+  .main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .header {
     font-size: 30px;
     margin-bottom: 16px;

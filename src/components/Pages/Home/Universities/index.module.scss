@@ -1,4 +1,5 @@
 @import "src/styles/variables";
+@import "src/styles/utilities";
 
 .main {
   background-color: $bg-primary;
@@ -10,4 +11,16 @@
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 34px;
+}
+
+.container {
+
+}
+
+
+@include media-breakpoint-down(md) {
+  .main {
+    margin-top: 16px;
+    margin-bottom: 18px
+  }
 }

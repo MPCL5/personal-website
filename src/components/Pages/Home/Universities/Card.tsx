@@ -1,6 +1,7 @@
 import styles from './Card.module.scss'
 import {IUniversityData} from "@/constants/universities";
 import Image from "next/image";
+import React from "react";
 
 export const UniversityDataCard = (props: IUniversityData) => {
     return (
@@ -15,7 +16,8 @@ export const UniversityDataCard = (props: IUniversityData) => {
                 />
             </div>
             <div className={styles.textArea}>
-                <h3 className={styles.degree}>{props.degree.split('\n').map(item => <>{item}<br/></>)}</h3>
+                <h3 className={styles.degree}>{props.degree.split('\n').map(item => <React.Fragment
+                    key={item}>{item}<br/></React.Fragment>)}</h3>
                 <div className={styles.advisor}>Advisor: {props.advisor}</div>
                 <div className={styles.date}>
                     <Image
