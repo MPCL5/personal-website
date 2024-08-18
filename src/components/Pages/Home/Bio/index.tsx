@@ -8,7 +8,7 @@ export const HomeBioSection = () => {
     return <section className={styles.main}>
         <div className="container">
             <div className="row position-relative">
-                <div className="col-12 col-md-auto">
+                <div className="col-12 col-md-auto px-4 px-md-0">
                     <BioSectionImage/>
                 </div>
                 <div className="col-12 col-md-auto pe-auto pe-md-0">

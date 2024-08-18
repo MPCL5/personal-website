@@ -3,4 +3,5 @@
 .main {
   border: 4px solid $default;
   box-shadow: 4px 4px 0 $secondary;
+  box-sizing: border-box;
 }

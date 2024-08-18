@@ -1,4 +1,5 @@
 @import "src/styles/variables";
+@import "src/styles/utilities";
 
 .main {
   background-color: $bg-secondary;
@@ -10,4 +11,10 @@
   top: 5%;
   right: 10%;
   width: auto;
+}
+
+@include media-breakpoint-down(md) {
+  .main {
+    padding: 16px 0;
+  }
 }
