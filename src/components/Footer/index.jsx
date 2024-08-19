@@ -4,9 +4,8 @@ import Image from "next/image";
 
 export const Footer = () => {
     return <footer className={clsx(styles.main, 'container flex-column flex-md-row')}>
-        <div>
-            Every thing is temporary for human, even limitations. <br/>
-            BTW, we are done for now.
+        <div className={"mb-2"}>
+            Every thing is temporary for the human, even their limitations. <br/>
         </div>
         <Image
             height={50}

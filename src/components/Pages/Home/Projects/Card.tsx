@@ -30,7 +30,7 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
 
     return (
         <div className={styles.main}>
-            <div className={'d-flex justify-content-between align-items-center mb-3'}>
+            <div className={'d-flex justify-content-between align-items-center mb-2 mb-md-3'}>
                 <h3 className={styles.title}>{data.title}</h3>
                 <Link href={`https://github.com/${data.link}`} target={'_blank'}>
                     <Button className={styles.button}>
@@ -71,6 +71,16 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
                     {starCount}
                 </div>
             </div>
+            <Button className={clsx(styles.button, styles.buttonMobile)}>
+                <span>Visit</span>
+                <Image
+                    src={'img/icon_globe.svg'}
+                    alt={'glob'}
+                    height={18}
+                    width={18}
+                    draggable={false}
+                />
+            </Button>
         </div>
     )
 }
