@@ -1,5 +1,12 @@
+@import "src/styles/utilities";
+
 .main {
-  min-height: 480px;
-  border-radius: 8px;
   overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+  .main {
+    min-height: 480px;
+    border-radius: 8px;
+  }
 }

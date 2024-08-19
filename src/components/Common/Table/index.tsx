@@ -5,6 +5,7 @@ import {ISidebarData, TableSidebar} from "@/components/Common/Table/Sidebar";
 import {TablePresentation} from "@/components/Common/Table/Presentation";
 import {useState} from "react";
 import clsx from "clsx";
+import {TableMobileHeadBar} from "@/components/Common/Table/MobileHeadBar";
 
 export interface ITableData {
     id: string;
@@ -20,12 +21,17 @@ export const Table = ({data}: { data: ITableData[] }) => {
 
     return (
         <div className={clsx("row", styles.main)}>
+            <TableMobileHeadBar
+                data={sidebarData}
+                active={active?.id}
+                onClick={(key) => setActive(data.find(item => item.id == key))}
+            />
             <TableSidebar
                 data={sidebarData}
                 active={active?.id}
                 onClick={(key) => setActive(data.find(item => item.id == key))}
             />
-            <TablePresentation text={active?.text} />
+            <TablePresentation text={active?.text}/>
         </div>
     )
 }

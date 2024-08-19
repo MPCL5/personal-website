@@ -1,7 +1,15 @@
 @import "src/styles/variables";
+@import "src/styles/utilities";
 
 .main {
   background-color: $default;
   color: $bg-primary;
   padding: 20px 54px;
+}
+
+@include media-breakpoint-down(md) {
+  .main {
+    margin-top: 20px;
+    background-color: $default;
+  }
 }

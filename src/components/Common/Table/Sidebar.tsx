@@ -6,7 +6,7 @@ export interface ISidebarData {
     value: string;
 }
 
-interface ITableSidebarProps {
+export interface ITableSidebarProps {
     data: ISidebarData[],
     active: string | undefined,
     onClick: (key: string) => any
