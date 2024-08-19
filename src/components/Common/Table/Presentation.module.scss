@@ -5,11 +5,14 @@
   background-color: $default;
   color: $bg-primary;
   padding: 20px 54px;
+
 }
 
 @include media-breakpoint-down(md) {
   .main {
     margin-top: 20px;
     background-color: $default;
+    padding: 8px 12px;
+    min-height: 480px;
   }
 }

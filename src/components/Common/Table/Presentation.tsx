@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export const TablePresentation = ({text}: { text: string | undefined }) => {
     return (
-        <div className={clsx('col-12 col-md-9', styles.main)}>
+        <div className={clsx('col-md-9', styles.main)}>
             {text}
         </div>
     )

@@ -3,18 +3,16 @@
 
 .main {
   background-color: $bg-secondary;
-  width: 100%;
   max-width: 100%;
   overflow: auto;
   display: flex;
-  //height: 33px;
-}
 
-.content {
-  display: flex;
-  width: 100%;
-  flex-flow:row;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 
+  &::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
 }
 
 .item {
