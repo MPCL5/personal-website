@@ -1,0 +1,23 @@
+@import "src/styles/variables";
+@import "src/styles/utilities";
+
+.main {
+  height: auto;
+  padding: 18px 0;
+}
+
+main:has(> section.main) {
+  background-color: $bg-secondary;
+}
+
+.texture {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .texture {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+@import "/src/styles/utilities";
+
+.main {
+  display: flex;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  width: 36px;
+  margin-top: 7px;
+}
+
+.itemContainer {
+  margin-left: 16px;
+  font-size: 20px;
+
+  & h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 43px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .main {
+    padding: 0 16px;
+  }
+
+  .itemContainer {
+    margin-left: 16px;
+    font-size: 16px;
+
+    & h2 {
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+  }
+
+}
