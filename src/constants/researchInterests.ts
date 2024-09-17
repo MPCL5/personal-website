@@ -1,6 +1,6 @@
 export const RESEARCH_INTERESTS = [
-    'Bio Computing',
-    'Machine Learning',
+    'Computational Biology',
+    'Data Privacy',
     'Generative Models',
-    'Software Engineering',
+    'Machine Learning',
 ]

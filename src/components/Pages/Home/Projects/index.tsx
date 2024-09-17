@@ -11,7 +11,7 @@ const DATA: IProjectCardData[] = [
     {
         title: 'Stream-Data-Challenge',
         date: '2023/04/01',
-        description: 'Playing with data steam solutions',
+        description: 'Playing with data stream mining solutions',
         link: 'MPCL5/stream-data-challenge',
     },
 ]

@@ -7,6 +7,7 @@ import {Work_Sans} from "next/font/google";
 const inter = Work_Sans({subsets: ["latin"]});
 
 export const metadata: Metadata = {
+    title: "Masoud Poorghaffar Aghdam",
     description: "Masoud's personal website :D",
 };
 

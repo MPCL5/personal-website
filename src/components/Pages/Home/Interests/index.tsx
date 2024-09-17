@@ -12,8 +12,8 @@ export const HomeResearchInterestsSection = () => {
                     <div className="col-12 col-md-7">
                         <h2 className={styles.title}>Research Interests</h2>
                         <p className={styles.brief}>
-                            Honestly saying, I am interested in everything related to computers! <br/>
-                            By the way, currently I am interested in the following topics:
+                            Honestly saying, I am interested in everything related to computers :) <br/>
+                            By the way, currently I am interested in:
                         </p>
                         <div>
                             {RESEARCH_INTERESTS.map(item => <ResearchInterestItem text={item} key={item}/>)}

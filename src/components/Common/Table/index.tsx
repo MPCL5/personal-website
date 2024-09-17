@@ -15,7 +15,7 @@ export interface ITableData {
 
 
 export const Table = ({data}: { data: ITableData[] }) => {
-    const [active, setActive] = useState<ITableData>(data[0])
+    const [active, setActive] = useState<ITableData | undefined>(data[0])
     const sidebarData: ISidebarData[] = data.map(item => ({id: item.id, value: item.title}))
 
 
