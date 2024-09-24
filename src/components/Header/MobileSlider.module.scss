@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.main {
+  width: 100vw;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.container {
+  height: 100vh;
+  width: 80vw;
+  background-color: $bg-primary;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+  padding: 18px 12px;
+}
+
+.transArea {
+  width: 20vw;
+  height: 100vh;
+}
+
+.open {
+  display: flex;
+}

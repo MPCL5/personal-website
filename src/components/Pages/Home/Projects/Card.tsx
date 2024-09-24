@@ -18,7 +18,8 @@ interface IGitResponse {
 async function getStarCount(repo_link: string): Promise<number> {
     const response = await fetch(`https://api.github.com/repos/${repo_link}`)
     if (!response.ok) {
-        throw new Error("Something went wrong while fetching data from github")
+        return NaN;
+        // throw new Error("Something went wrong while fetching data from github")
     }
 
     const data = await response.json() as IGitResponse;
