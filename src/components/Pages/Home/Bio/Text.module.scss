@@ -35,6 +35,14 @@
   }
 
   .button {
-     margin-top: 16px;
-   }
+    margin-top: 16px;
+  }
+
+  .text {
+    text-align: justify;
+
+    br {
+      display: none;
+    }
+  }
 }
