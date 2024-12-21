@@ -1,7 +1,6 @@
 "use client"
 
 import {Logo} from "@/components/Header/Logo";
-import {GitButton} from "@/components/Header/GitButton";
 import {NavigationBar} from "@/components/Header/NavigationBar";
 import styles from './index.module.scss'
 import clsx from "clsx";
@@ -17,6 +16,6 @@ export const Header = () => {
         <MobileSlider enabled={isNavOpen} onClick={() => setIsNaveOpen(perv => !perv)} />
         <Logo/>
         <NavigationBar/>
-        <GitButton/>
+        {/*<GitButton/>*/}
     </header>;
 };
