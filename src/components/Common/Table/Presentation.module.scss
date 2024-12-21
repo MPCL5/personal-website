@@ -5,7 +5,11 @@
   background-color: $default;
   color: $bg-primary;
   padding: 20px 54px;
+  line-height: 28px;
 
+  b {
+    font-size: 18px;
+  }
 }
 
 @include media-breakpoint-down(md) {

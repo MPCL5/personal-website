@@ -3,14 +3,14 @@
 import styles from './index.module.scss'
 import {ISidebarData, TableSidebar} from "@/components/Common/Table/Sidebar";
 import {TablePresentation} from "@/components/Common/Table/Presentation";
-import {useState} from "react";
+import {ReactNode, useState} from "react";
 import clsx from "clsx";
 import {TableMobileHeadBar} from "@/components/Common/Table/MobileHeadBar";
 
 export interface ITableData {
     id: string;
     title: string;
-    text: string;
+    text: ReactNode;
 }
 
 
