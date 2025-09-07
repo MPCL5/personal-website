@@ -2,7 +2,7 @@ export const Fall2024Experience = () => {
     return (
         <div>
             <b>Bilkent University</b> <br />
-            Teaching Assistance - CS101  Algorithms and Programming I <br /> <br />
+            Teaching Assistant - CS101  Algorithms and Programming I <br /> <br />
 
             <b>Community Service</b> <br />
             Research in Computational Molecular Biology (RECOMB) - Reviewer <br /> <br />

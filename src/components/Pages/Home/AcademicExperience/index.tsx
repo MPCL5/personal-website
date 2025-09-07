@@ -7,8 +7,10 @@ import {Spring2022Experience} from "@/components/Pages/Home/AcademicExperience/S
 import {Fall2023Experience} from "@/components/Pages/Home/AcademicExperience/Fall2023";
 import {Spring2024Experience} from "@/components/Pages/Home/AcademicExperience/Spring2024";
 import {Fall2024Experience} from "@/components/Pages/Home/AcademicExperience/Fall2024";
+import { Spring2025Experience } from '@/components/Pages/Home/AcademicExperience/Spring2025';
 
 const SAMPLE_DATA: ITableData[] = [
+    {id: '7', title: 'Spring 2025', text: <Spring2025Experience />},
     {id: '1', title: 'Fall 2024', text: <Fall2024Experience />},
     {id: '2', title: 'Spring 2024', text: <Spring2024Experience />},
     {id: '3', title: 'Fall 2023', text: <Fall2023Experience />},

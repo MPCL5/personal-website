@@ -13,11 +13,10 @@ export const BioSectionText = () => {
             <span>Hello and Welcome!</span>
             <h1 className={styles.header}>I’m <span className="text-primary">Masoud</span> <br/> Poorghaffar Aghdam</h1>
             <p className={styles.text}>
-                I used to be a software developer, but I quited. (why?) <br/>
-                Currently, I am a graduate student at <span className="text-primary">Bilkent University</span>. <br/>
-                I am trying to build AI based tools for biologist. (trying to save lives) <br/>
-                Additionally, I have endeavours to enhance the privacy of people. <br/>
-                I think, I can develop lots of stuff including myself. <br/>
+                {/* I used to be a software developer, but I quited. (why?) <br/> */}
+                I am a graduate student at <span className="text-primary">Bilkent University</span>. <br/>
+                My research focuses on methods and  AI tools for<br /> enhancing the way we share and use data.<br/>
+                In my free time, I enjoy exploring concepts and<br /> ideas from other fields. <br />
             </p>
             {/*<Link href="https://blog.masoud.live" className="text-decoration-none">*/}
             {/*    <ArrowButton className={styles.button}>My personal thoughts</ArrowButton>*/}
