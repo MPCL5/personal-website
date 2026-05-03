@@ -14,14 +14,14 @@ export const HomeBioSection = () => {
                 <div className="col-12 col-md-auto pe-auto pe-md-0">
                     <BioSectionText/>
                 </div>
-                <Image
+                {/* <Image
                     src="/img/Arrow SVG.svg"
                     alt="arrow"
                     height={190}
                     width={231}
                     className={clsx(styles.arrow, "d-none d-md-block")}
                     draggable={false}
-                />
+                /> */}
             </div>
         </div>
     </section>

@@ -14,8 +14,10 @@ export const BioSectionText = () => {
             <h1 className={styles.header}>I’m <span className="text-primary">Masoud</span> <br/> Poorghaffar Aghdam</h1>
             <p className={styles.text}>
                 {/* I used to be a software developer, but I quited. (why?) <br/> */}
-                I am a graduate student at <span className="text-primary">Bilkent University</span>. <br/>
-                My research focuses on methods and  AI tools for<br /> enhancing the way we share and use data.<br/>
+                I am a PhD candidate at <span className="text-primary">Radboud University</span> advised
+                by <Link className={styles.advisorLink} href='https://gunesacar.net/'>Dr. Güneş Acar</Link>. <br/>
+                I am a researcher in the field of privacy.<br /> 
+                Specifically, my work focuses on web privacy and privacy in ML. <br/>
                 In my free time, I enjoy exploring concepts and<br /> ideas from other fields. <br />
             </p>
             {/*<Link href="https://blog.masoud.live" className="text-decoration-none">*/}
