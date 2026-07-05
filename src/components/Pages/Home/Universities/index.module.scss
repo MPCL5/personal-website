@@ -5,6 +5,7 @@
   background-color: $bg-primary;
   margin-top: 48px;
   margin-bottom: 66px;
+  position: relative;
 }
 
 .title {
@@ -20,9 +21,27 @@
 }
 
 
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 40%;
+  max-width: 448px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  user-select: none;
+}
+
+
 @include media-breakpoint-down(md) {
   .main {
     margin-top: 16px;
     margin-bottom: 18px
+  }
+
+  .image {
+    display: none;
   }
 }
