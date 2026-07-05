@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const BioSectionImage = () => {
     return <Image
-        src="/img/MyPic.png"
+        src="/img/new_pic.jpg"
         alt="masoud"
         className={styles.main}
         height={383}
