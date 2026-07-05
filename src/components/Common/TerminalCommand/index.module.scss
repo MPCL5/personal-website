@@ -1,0 +1,12 @@
+@import "src/styles/variables";
+
+.main {
+  margin: 0 0 26px;
+  font-family: var(--font-fira-mono), monospace;
+  font-size: 13px;
+  color: #8a95a2;
+}
+
+.prompt {
+  color: $primary;
+}

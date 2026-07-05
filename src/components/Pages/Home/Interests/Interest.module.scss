@@ -1,28 +1,50 @@
 @import "src/styles/variables";
 @import "src/styles/utilities";
 
+$card-bg: #2c3846;
+$card-border: #3a4756;
+$text-light: #eef2f6;
+$text-muted: #8a95a2;
+$mono: var(--font-fira-mono), monospace;
+
 .main {
+  height: 100%;
+  background-color: $card-bg;
+  border: 1px solid $card-border;
+  border-left: 2px solid rgba($primary, 0.45);
+  padding: 18px 22px;
+
+  &:hover {
+    border-left-color: $primary;
+  }
+}
+
+.head {
   display: flex;
-  align-items: center;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 18px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
-.rectangle {
-  height: 8px;
-  width: 8px;
-  margin-inline-end: 12px;
-  background-color: $primary;
-  box-shadow: -2px 2px 0 #161614;
+.number {
+  flex: 0 0 auto;
+  font-family: $mono;
+  font-size: 14px;
+  color: $primary;
 }
 
-@include media-breakpoint-down(md) {
-  .main {
-    font-size: 20px;
-  }
+.title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $text-light;
+}
+
+.description {
+  margin: 0;
+  font-family: $mono;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $text-muted;
 }

@@ -1,14 +1,14 @@
 import styles from './Interest.module.scss'
-import {Fira_Mono} from "next/font/google";
-import clsx from "clsx";
+import {IResearchInterest} from "@/constants/researchInterests";
 
-const mono = Fira_Mono({weight: "400", subsets: ['latin']});
-
-export const ResearchInterestItem = ({text}: { text: string; }) => {
+export const ResearchInterestItem = ({number, title, description}: IResearchInterest) => {
     return (
-        <div className={clsx(styles.main, mono.className)}>
-            <div className={styles.rectangle}/>
-            {text}
+        <div className={styles.main}>
+            <div className={styles.head}>
+                <span className={styles.number}>{number}</span>
+                <h3 className={styles.title}>{title}</h3>
+            </div>
+            <p className={styles.description}>{description}</p>
         </div>
     )
 }

@@ -2,26 +2,50 @@
 @import "src/styles/utilities";
 
 .main {
+  overflow: hidden;
   background-color: $bg-secondary;
   padding: 84px 0;
 }
 
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 40%;
+  max-width: 448px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  user-select: none;
+}
+
 .title {
-  color: $secondary;
+  color: $primary;
   font-size: 34px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 6px;
+}
+
+.command {
+  margin-bottom: 24px;
 }
 
 .brief {
   // max-width: 500px;
-  margin: 8px 0 24px;
-  font-size: 20px;
-  line-height: 32px;
+  margin: 0 0 24px;
+  font-size: 16px;
 }
 
-.image {
-  margin-top: 18px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 
@@ -45,5 +69,9 @@
   .brief {
     margin-bottom: 18px;
     font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
