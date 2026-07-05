@@ -8,21 +8,21 @@ export const RESEARCH_INTERESTS: IResearchInterest[] = [
     {
         number: '01',
         title: 'Digital Privacy',
-        description: 'Tracking, fingerprinting, and how users are followed across the web.',
+        description: 'Tracking, malwaretising, and how scammer target search engines.',
     },
     {
         number: '02',
         title: 'Data Privacy',
-        description: 'Protecting sensitive information across datasets and pipelines.',
+        description: 'Protecting private information across datasets and pipelines.',
     },
     {
         number: '03',
         title: 'Privacy-Preserving ML',
-        description: 'Training and deploying models without leaking the data behind them.',
+        description: 'Training and deploying models without leaking the private data behind them.',
     },
     {
         number: '04',
-        title: 'Dark Patterns',
-        description: 'Interfaces engineered to nudge users against their own interest.',
+        title: 'Privacy in Healthcare',
+        description: 'Proctecting private aspects of paitent data while maximizing the utility.',
     },
 ]
