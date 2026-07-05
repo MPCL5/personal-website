@@ -1,13 +1,80 @@
+@import "src/styles/variables";
 @import "src/styles/utilities";
+
+$rail: #3e4b59;
+$tab-idle: #9aa4b0;
+$tab-hover: #c8cfd8;
+$panel-bg: #dadde6;
+$mono: var(--font-fira-mono), monospace;
 
 .main {
   padding: 54px 0 84px;
+  position: relative;
 }
 
 .title {
-  margin: 0 0 36px;
+  margin: 0 0 6px;
   font-size: 34px;
   font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid $rail;
+}
+
+.tab {
+  font-family: $mono;
+  font-size: 14px;
+  text-align: left;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  margin-left: -2px;
+  color: $tab-idle;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    color: $tab-hover;
+  }
+}
+
+.tabActive {
+  border-left-color: $primary;
+  color: $primary;
+  font-weight: 700;
+}
+
+.panel {
+  min-width: 0;
+  background: $panel-bg;
+  color: #2a2f36;
+  padding: 26px 30px;
+  min-height: 280px;
+  overflow-wrap: break-word;
+}
+
+.image {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 0;
+  width: 40%;
+  max-width: 200px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  user-select: none;
 }
 
 @include media-breakpoint-down(md) {
@@ -17,6 +84,46 @@
 
   .title {
     font-size: 30px;
-    margin: 0 0 10px;
+    margin-bottom: 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tabs {
+    flex-direction: row;
+    border-left: none;
+    border-bottom: 2px solid $rail;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tab {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    margin-left: 0;
+    margin-bottom: -2px;
+  }
+
+  .tabActive {
+    border-left-color: transparent;
+    border-bottom-color: $primary;
+  }
+
+  .panel {
+    padding: 20px 18px;
+    min-height: unset;
+  }
+
+  .image {
+    display: none;
   }
 }

@@ -1,0 +1,66 @@
+@import "src/styles/variables";
+
+$mono: var(--font-fira-mono), monospace;
+
+.blockTitle {
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e2228;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.line {
+  margin: 0;
+  font-family: $mono;
+  font-size: 13px;
+  color: #3a4048;
+}
+
+.paperTitle {
+  margin: 0 0 4px;
+  font-family: $mono;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2a2f36;
+}
+
+.paperAuthors {
+  margin: 0 0 8px;
+  font-family: $mono;
+  font-size: 12.5px;
+  font-style: italic;
+  color: #4a5058;
+}
+
+.paperAbstract {
+  margin: 0 0 8px;
+  font-family: $mono;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #3a4048;
+}
+
+.paperVenue {
+  margin: 0;
+  font-family: $mono;
+  font-size: 12.5px;
+  font-style: italic;
+  color: #4a5058;
+  overflow-wrap: anywhere;
+
+  a {
+    color: #b57400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
