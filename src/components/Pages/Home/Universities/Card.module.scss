@@ -1,64 +1,97 @@
 @import "src/styles/variables";
 @import "src/styles/utilities";
 
+$row-border: #3e4b59;
+$row-border-neutral: #45525f;
+$text-heading: #eef2f6;
+$text-meta: #aeb7c2;
+$text-muted: #8a95a2;
+$mono: var(--font-fira-mono), monospace;
+
 .main {
-  background-color: $bg-secondary;
   display: flex;
-  border: 1px solid $default;
+  align-items: center;
+  gap: 24px;
+  background-color: $bg-secondary;
+  border: 1px solid $row-border;
+  border-left: 3px solid $row-border-neutral;
+  padding: 20px 26px;
+}
+
+.current {
+  border-left: 3px solid $primary;
 }
 
 .logo {
+  flex: 0 0 auto;
+  width: 82px;
+  height: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $default;
-  height: 248px;
-  width: 248px;
+
+  img {
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+  }
 }
 
 .textArea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 12px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.kicker {
+  margin: 0 0 5px;
+  font-family: $mono;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: $text-muted;
+}
+
+.kickerCurrent {
+  color: $primary;
 }
 
 .degree {
-  color: $primary;
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 18px;
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $text-heading;
 }
 
 .advisor {
-  font-size: 20px;
-  margin-bottom: 12px;
+  margin: 0;
+  font-family: $mono;
+  font-size: 13px;
+  color: $text-meta;
 }
 
 .date {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
+  flex: 0 0 auto;
+  font-family: $mono;
+  font-size: 12.5px;
+  color: $text-muted;
+  border: 1px solid $row-border-neutral;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.dateCurrent {
+  color: $primary;
+  border-color: $primary;
 }
 
 @include media-breakpoint-down(md) {
   .main {
-    flex-direction: column;
-    margin-bottom: 24px;
-  }
-
-  .logo {
-    width: 100%;
-    height: auto;
-    padding: 16px 0;
-  }
-
-  .degree {
-    margin-bottom: 8px;
-  }
-
-  .textArea {
+    flex-wrap: wrap;
+    gap: 16px;
     padding: 18px;
+  }
+
+  .date {
+    order: 3;
   }
 }

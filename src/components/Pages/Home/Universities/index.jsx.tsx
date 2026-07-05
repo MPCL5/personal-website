@@ -8,11 +8,10 @@ export const HomeUniversitiesSection = () => {
     return (
         <section className={clsx(styles.main, 'container')}>
             <h2 className={styles.title}>Education</h2>
-            <div className={clsx("row", styles.container)}>
+            <p className={styles.subtitle}>$ ls ~/education --sort=recent</p>
+            <div className={styles.stack}>
                 {UNIVERSITIES_DATA.map(item => (
-                    <div className="col-12 col-md-6" key={item.name + item.degree}>
-                        <UniversityDataCard {...item} />
-                    </div>
+                    <UniversityDataCard {...item} key={item.name + item.degree} />
                 ))}
             </div>
         </section>
