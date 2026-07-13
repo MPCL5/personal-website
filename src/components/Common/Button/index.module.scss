@@ -1,18 +1,19 @@
 @import "src/styles/variables";
 
 .main {
-  border: 1px solid #000000;
+  border: 1px solid #45525f;
   border-radius: 3px;
-  background-color: $default;
+  background-color: transparent;
   //box-shadow: 2px 2px 0 $default;
   text-decoration: none;
-  display: inline-block;
-  height: 34px;
-  padding: 4px 8px;
+  display: inline-flex;
+  // height: 34px;
+  padding: 5px 10px;
   transition: 0.1s linear;
   cursor: pointer;
+  color: #e8edf2;
 
-  &:active {
-    box-shadow: none;
+  &:hover {
+     border-color: #f5a623;
   }
 }

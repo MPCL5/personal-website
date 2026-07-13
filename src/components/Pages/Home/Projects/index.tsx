@@ -20,7 +20,7 @@ export const HomeProjectsSection = () => {
     return (
         <section className={styles.main}>
             <div className={'container'}>
-                <h2 className={styles.title}>Beloved Projects</h2>
+                <h2 className={styles.title}>Higlighted Projects</h2>
                 <div className={'row'}>
                     {DATA.map(item => (
                         <div className={'col-12 col-md-6'} key={item.title}>

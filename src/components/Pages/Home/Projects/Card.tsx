@@ -31,7 +31,7 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
 
     return (
         <div className={styles.main}>
-            <div className={'d-flex justify-content-between align-items-center mb-2 mb-md-3'}>
+            <div className={'d-flex justify-content-between align-items-center mb-2'}>
                 <h3 className={styles.title}>{data.title}</h3>
                 <Link href={`https://github.com/${data.link}`} target={'_blank'}>
                     <Button className={styles.button}>
@@ -39,8 +39,8 @@ export const ProjectCard = async ({data}: { data: IProjectCardData }) => {
                         <Image
                             src={'img/icon_globe.svg'}
                             alt={'glob'}
-                            height={18}
-                            width={18}
+                            height={15}
+                            width={15}
                             draggable={false}
                         />
                     </Button>
