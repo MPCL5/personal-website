@@ -18,7 +18,7 @@ export const BioSectionText = () => {
       <p className={styles.text}>
         {/* I used to be a software developer, but I quited. (why?) <br/> */}I
         am a PhD candidate at{" "}
-        <span className="text-primary">Radboud University</span> advised by{" "}
+        <Link className={styles.university} href="https://ru.nl/">Radboud University</Link> advised by{" "}
         <Link className={styles.advisorLink} href="https://gunesacar.net/">
           Dr. Güneş Acar
         </Link>

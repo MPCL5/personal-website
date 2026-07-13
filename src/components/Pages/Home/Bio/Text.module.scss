@@ -29,6 +29,11 @@
   color: $primary;
 }
 
+.university {
+  text-decoration: none;
+  color: #E3000B;
+}
+
 @include media-breakpoint-down(md) {
   .main {
     padding-top: 18px;
