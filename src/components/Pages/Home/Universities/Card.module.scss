@@ -6,7 +6,6 @@ $row-border-neutral: #45525f;
 $text-heading: #eef2f6;
 $text-meta: #aeb7c2;
 $text-muted: #8a95a2;
-$mono: var(--font-fira-mono), monospace;
 
 .main {
   display: flex;
@@ -15,11 +14,15 @@ $mono: var(--font-fira-mono), monospace;
   background-color: $bg-secondary;
   border: 1px solid $row-border;
   border-left: 3px solid $row-border-neutral;
+
   padding: 20px 26px;
+  &:hover {
+    border-left-color: $primary;
+  }
 }
 
 .current {
-  border-left: 3px solid $primary;
+  border-left: 3px solid $secondary;
 }
 
 .logo {
