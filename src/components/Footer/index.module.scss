@@ -1,4 +1,5 @@
 @import "src/styles/utilities";
+@import "src/styles/variables";
 
 .main {
   padding: 24px 0;
@@ -7,6 +8,10 @@
   align-items: center;
   font-size: 12px;
   line-height: 18px;
+}
+
+.text {
+  color: $primary;
 }
 
 @include media-breakpoint-down(md) {
